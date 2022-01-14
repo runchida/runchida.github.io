@@ -1,0 +1,80 @@
+.author-pic {
+    height: 200px;
+}
+
+.author-name {
+    color: rgb(160,20,65);
+    font-size: large;
+}
+
+.author-info {
+    align-content: center;
+    text-align: center;
+}
+
+.author-card {
+    margin: 10px;
+}
+
+.author-form {
+    color: rgb(111, 111, 111);
+}
+
+@media(max-width: 600px){
+    .author-card {
+        width: 90%;
+        height: 30%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+@media(min-width: 601px) and (max-width: 900px){
+    .author-card {
+        width: 90%;
+        height: 30%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10%;
+    }
+}
+
+/*card container on medium screens*/
+@media(min-width: 901px) and (max-width: 1200px){
+    .author-card {
+        width: 80%;
+        height: 250px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10%;
+    }
+
+    .author-cap {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media(min-width: 1201px) {
+    .author-card {
+        width: 80%;
+        height: 250px;
+        display:flex;
+        flex-direction: raw;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10%;
+    }
+
+    .author-cap {
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,19 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid green; */
+}
+
+.nav-box {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+    font-size: large;
+}
+
+.nav-box:hover {
+    color: rgb(160,20,65);
+}

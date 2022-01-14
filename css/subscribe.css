@@ -1,0 +1,22 @@
+.sub {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(220, 220, 220);
+    padding: 5px;
+}
+
+.sub-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sub-button {
+    grid-area: b;
+}

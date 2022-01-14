@@ -1,0 +1,15 @@
+.pic-vertical {
+    max-height: 500px;
+    width: 60%;
+    height: auto;
+}
+
+.pic-horizontal {
+    width: 120%;
+    height: auto;
+    max-width: 900px;
+}
+
+figcaption {
+    background-color: rgba(200, 200, 200, 0.85);
+}

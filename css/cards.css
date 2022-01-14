@@ -1,0 +1,117 @@
+/*card container on smallest screens*/
+@media(max-width: 600px){
+    .cards {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(200px, 300px);
+    }
+}
+
+/*card container on small screens*/
+@media(min-width: 601px) and (max-width: 900px){
+    .cards {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(200px, 300px);
+    }
+}
+
+/*card container on medium screens*/
+@media(min-width: 901px) and (max-width: 1200px){
+    .cards {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(300px, auto);
+    }
+}
+
+/*card container on big screens*/
+@media(min-width: 1201px){
+    .cards {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(300px, auto);
+    }
+}
+
+/*grid definition for each cards*/
+#card1, #card2, #card3, #card4, #card5{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "card";
+}
+
+#img-text1, #img-text2, #img-text3, #img-text4, #img-text5 {
+    pointer-events: none;
+    z-index: 2;
+    height: fit-content;
+    grid-area: card;
+    margin-top: auto;
+    color: rgb(255, 255, 255);
+    background-color: rgba(200, 200, 200, 0.85);
+    text-align: center;
+}
+
+#img-box1 {
+    z-index: 1;
+    filter: grayscale(80%);
+    grid-area: card;
+    background-image: url(../pic/linux.png);
+    background-repeat: round;
+    background-position: center;
+}
+
+
+#img-box2 {
+    z-index: 1;
+    filter: grayscale(80%);
+    grid-area: card;
+    background-image: url(../pic/golang.jpg);
+    background-repeat: round;
+    background-position: center;
+}
+
+#img-box3 {
+    z-index: 1;
+    filter: grayscale(80%);
+    grid-area: card;
+    background-image: url(../pic/linux.png);
+    background-repeat: round;
+    background-position: center;
+}
+
+#img-box4 {
+    z-index: 1;
+    filter: grayscale(80%);
+    grid-area: card;
+    background-image: url(../pic/linux.png);
+    background-repeat: round;
+    background-position: center;
+}
+
+#img-box5 {
+    z-index: 1;
+    filter: grayscale(80%);
+    grid-area: card;
+    background-image: url(../pic/linux.png);
+    background-repeat: round;
+    background-position: center;
+}
+
+#img-box1:hover, #img-box2:hover, #img-box3:hover, #img-box4:hover, #img-box5:hover {
+    background-color: white;
+    filter: none;
+    /* background-image: 0; */
+}
+
+.card:active {
+    background-color: rgb(233, 79, 129);
+}
+
+
+

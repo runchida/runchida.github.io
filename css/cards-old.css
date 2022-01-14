@@ -1,0 +1,97 @@
+/* rules for all cards*/
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(160,20,65);
+    text-align: center;
+}
+
+/*rules for individual cards*/
+#card1 {
+    background-image: url(../pic/linux.png);
+    background-repeat: round;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+#card2 {
+    background-image: url(../pic/golang.jpg);
+    background-repeat: round;
+}
+
+#card3 {
+    background-color: rgb(200, 200, 200);
+}
+
+#card4 {
+    background-color: rgb(220, 220, 220);
+}
+
+#card5 {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "card5";
+    background-color: rgb(220, 220, 220);
+}
+
+#img-box5 {
+    filter: grayscale(100%);
+    grid-area: card5;
+    background-image: url(../pic/linux.png);
+    background-repeat: round;
+    background-position: center;
+    z-index: 0;
+}
+
+#img-txt5 {
+    height: fit-content;
+    z-index: 1;
+    grid-area: card5;
+    margin-top: auto;
+    color: rgb(255, 255, 255);
+    background-color: rgba(200, 200, 200, 0.85);
+}
+
+#card1:hover, #card2:hover, #card3:hover, #card4:hover, #img-box5:hover {
+    background-color: white;
+    filter: none;
+    /* background-image: 0; */
+}
+
+.card:active {
+    background-color: rgb(233, 79, 129);
+}
+
+/*card container on small screens*/
+@media(max-width: 900px){
+    .cards {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(300px, 450px);
+    }
+    
+    
+}
+
+/*card container on medium screens*/
+@media(min-width: 901px) and (max-width: 1200px){
+    .cards {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(300px, auto);
+    }
+}
+
+/*card container on big screens*/
+@media(min-width: 1201px){
+    .cards {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(300px, auto);
+    }
+}

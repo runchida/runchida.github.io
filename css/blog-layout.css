@@ -1,0 +1,29 @@
+/*card container on small screens*/
+/* @media(max-width: 600px) { */
+    .blog-area {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .blog-content {
+        width: 70%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+
+    .related {
+        width: 80%;
+        text-align: center;
+    }
+
+    .sub {
+        width: 60%;
+    }
+/* } */
