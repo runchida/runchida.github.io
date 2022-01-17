@@ -1,5 +1,4 @@
 /*card container on small screens*/
-/* @media(max-width: 600px) { */
     .blog-area {
         height: fit-content;
         display: flex;
@@ -26,4 +25,3 @@
     .sub {
         width: 60%;
     }
-/* } */

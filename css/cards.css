@@ -6,6 +6,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: minmax(200px, 300px);
     }
+
+    .quote-box {
+        width: 90%;
+        background-color: rgb(200, 200, 200);
+        text-align: center;
+    }
 }
 
 /*card container on small screens*/
@@ -15,6 +21,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: minmax(200px, 300px);
+    }
+
+    .quote-box {
+        width: 80%;
+        background-color: rgb(200, 200, 200);
+        text-align: center;
     }
 }
 
@@ -26,6 +38,12 @@
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: minmax(300px, auto);
     }
+
+    .quote-box {
+        width: 50%;
+        background-color: rgb(200, 200, 200);
+        text-align: center;
+    }
 }
 
 /*card container on big screens*/
@@ -35,6 +53,12 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: minmax(300px, auto);
+    }
+
+    .quote-box {
+        width: 50%;
+        background-color: rgb(200, 200, 200);
+        text-align: center;
     }
 }
 
@@ -112,6 +136,3 @@
 .card:active {
     background-color: rgb(233, 79, 129);
 }
-
-
-

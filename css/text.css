@@ -2,7 +2,7 @@ h1 {
     color: rgb(160,20,65);
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6{
     color: rgb(111, 111, 111);
 }
 
@@ -10,14 +10,17 @@ p {
     color: rgb(0, 0, 0);
 }
 
-.accent {
-    font-weight: bold;
+.center-text {
+    text-align: center;
 }
 
-.emphasize {
-    font-style: italic;
+.quote {
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
 }
 
-.important {
-    text-decoration: underline;
+.share-text {
+    color: rgb(111, 111, 111);
+    padding-right: 20px;
+    font-size: large;
 }

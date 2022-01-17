@@ -14,7 +14,7 @@
 
     <!--Nav uses flex-->
     <nav class="nav-container">
-        <a class="nav-box" href="home.html">Home</a>
+        <a class="nav-box" href="../home.html">Home</a>
         <a class="nav-box" href="">Blogs</a>
         <a class="nav-box" href="">About</a>
         <hr>
@@ -23,18 +23,22 @@
     <article class="blog-area">
         <h1>Bloggie is here!</h1>
         <section class="blog-content">
+            <blockquote class="quote-box" cite="https://google.com">
+                <p class="quote">
+                    Whatever it is, it is.
+                </p>
+            </blockquote>
             <h2>It comes to entertain you</h2>
-            <img class="pic-vertical" src="../pic/golang.jpg" />
+            <img class="figure-vertical" src="../pic/golang.jpg" />
             <h3>It makes you laugh</h3>
-            <p>In this project, you'll write code across a handful of <span class="accent">HTML and CSS</span> files.
+            <p>In this project, you'll write code across a handful of <b>HTML and CSS</b> files.
                 Note that it's very important that you plan your project before you start writing any code!
                 Break your project down into small pieces of work and strategize your approach to each one. With
                 these
                 bite-sized amounts,
                 it'll be easier to debug and fix any issues that appear.
                 Feel free to implement your own design workflow, but if you get stuck -- here is a brief primer to
-                get
-                you up and running!
+                get you up and running!
             </p>
 
             <h3>It makes you smile</h3>
@@ -45,16 +49,18 @@
                 bite-sized amounts,
                 it'll be easier to debug and fix any issues that appear.
                 Feel free to implement your own design workflow, but if you get stuck -- here is a brief primer
-                <span class="emphasize">to get you up and running!</span>
+                <em>to get you up and running!</em>
             </p>
 
             <h2>It comes to save you</h2>
-            <img class="pic-horizontal" src="../pic/docker.png" />
-            <figcaption>Maybe pinocchio is inside?</figcaption>
+            <figure class="figure-horizontal">
+                <img src="../pic/docker.png" />
+                <figcaption class="center-text">Maybe pinocchio is inside?</figcaption>
+            </figure>
             <h3>Never gonna give you up</h3>
             <p>In this project, you'll write code across a handful of HTML and CSS files.
-                Note that it's very important <span class="important">you plan your project before you start writing any
-                    code!</span>
+                Note that it's very important
+                <u>you plan your project before you start writing any code!</u>
                 Break your project down into small pieces of work and strategize your approach to each one. With
                 these
                 bite-sized amounts,
@@ -106,8 +112,14 @@
             </div>
         </section>
 
+        <section class="share">
+            <p class="share-text"><b><em>share, share, share!</em></b></p>
+            <a href=""><img src="../pic/facebook.png" class="logo"/></a>
+            <a href=""><img src="../pic/twitter.png" class="logo"/></a>
+            <a href=""><img src="../pic/linkedin.png" class="logo"/></a>
+        </section>
+
         <form class="sub">
-            
             <h2>Get more Bloggies</h2>
             <div class="sub-form">
                 <label for="mail" class="sub-label">E-Mail: </label>

@@ -1,15 +1,24 @@
-.pic-vertical {
+.figure-vertical {
     max-height: 500px;
     width: 60%;
     height: auto;
 }
 
-.pic-horizontal {
-    width: 120%;
-    height: auto;
-    max-width: 900px;
-}
-
 figcaption {
     background-color: rgba(200, 200, 200, 0.85);
+}
+
+.figure-horizontal {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    padding: 5px;
 }
